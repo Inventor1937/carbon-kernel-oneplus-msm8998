@@ -2068,7 +2068,7 @@ csr_parse_scan_results(tpAniSirGlobal pMac,
 	bool fMatch = false;
 	tCsrScanResult *pBssDesc = NULL;
 	tDot11fBeaconIEs *pIes, *pNewIes = NULL;
-	eCsrEncryptionType uc, mc;
+	eCsrEncryptionType uc = 0, mc = 0;
 	eCsrAuthType auth = eCSR_AUTH_TYPE_OPEN_SYSTEM;
 	uint32_t len = 0;
 	enum cds_con_mode new_mode;
